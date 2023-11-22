@@ -2,22 +2,21 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="
-https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css
-">
-<script defer src="
-https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
-" 
- integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"crossorigin="anonymous"></script> 
-  <title>Workshop Bootstrap</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous">
+  <script defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -25,7 +24,8 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
   <header class="d-flex justify-content-between p-2 fixed-top bg-white">
     <h2 class="p-2">Workshop<span class="bg-info px-2 rounded">bootstrap</span></h2>
 
-    <button class="btn btn m-1 btn-outline-primary " type="button" data-bs-toggle="offcanvas"
+    <button class="btn btn m-1 btn-outline-primary " type="button" 
+    data-bs-toggle="offcanvas"
       data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="d-none d-md-block">Componentes e
         Estilos</span><i class="bi bi-list d-block d-md-none"></i>
     </button>
@@ -42,9 +42,8 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
   </header>
 
   <main>
-    <!--Div cabeçalho-->
-    <div class="container mt-5 pt-5">
-
+      <!--Div cabeçalho-->
+     <div class="container mt-5 pt-5">
       <div class="row m-0">
         <div class="col-md-6 d-flex align-items-center">
           <p class="display-5">Domine o Poder do Bootstrap
@@ -52,70 +51,70 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
             Elegantes com Facilidade
           </p>
         </div>
-
         <div class="col-md-6">
           <img src="https://miro.medium.com/v2/resize:fit:679/1*wFKo5GXw3aqAcmQkU2jo6A.gif"
             alt="imagem modular pesquisando" class="img-fluid" width="500px">
         </div>
       </div>
-
+     </div>
       <!--Div cards-->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card m-1">
-              <img src="https://cdni.iconscout.com/illustration/free/thumb/free-sign-up-form-4575543-3798675.png"
-                class="card-img-top w-50" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Agilidade na Responsividade</h5>
-                <p class="card-text">Desenvolva layouts responsivos de forma rápida
-                  e eficiente com o sistema de grid do Bootstrap,
-                  proporcionando uma experiência consistente em
-                  diversos dispositivos.</p>
+    
+      <section id="card_img"
+      class=" bg-transparent row mx-0 pt-5 d-flex justify-content-center">
+      <div class="col-lg-10">
+          <div class="row row-cols-1 row-cols-lg-3 g-4">
+              <div class="col-sm-4">
+                  <div class="card h-100">
+                      <div class="card-body">
+                          <img
+                              src="https://cdni.iconscout.com/illustration/free/thumb/free-sign-up-form-4575543-3798675.png"
+                              class="card-img-top w-50"
+                              alt="imagem pessoa trabalhando">
+                          <h5 class="card-title">Agilidade na Responsividade</h5>
+                          <p class="card-text">Desenvolva layouts responsivos de forma rápida e eficiente com o sistema de grid do Bootstrap, proporcionando uma experiência consistente em diversos dispositivos</p>
+                      </div>
+                      <div class="card-footer">
+                          <small class="text-body-secondary">
+                              Postado á
+                              15 mins</small>
+                      </div>
+                  </div>
               </div>
-              <div class="card-footer">
-                <small class="text-muted"> <small>Postado á 15 mins</small>
+              <div class="col-sm-4">
+                  <div class="card h-100">
+                      <img
+                          src="https://cdni.iconscout.com/illustration/free/thumb/free-sign-up-form-4575543-3798675.png"
+                          class="card-img-top w-50"
+                          alt="imagem pessoa trabalhando">
+                      <div class="card-body">
+                          <h5 class="card-title">Componentes Prontos para Uso</h5>
+                          <p class="card-text">Aproveite uma biblioteca extensa de componentes pré-projetados do Bootstrap, economizando tempo e esforço no desenvolvimento de interfaces atrativas</p>
+                      </div>
+                      <div class="card-footer">
+                          <small class="text-body-secondary">
+                              Postado á 2 dias</small>
+                      </div>
+                  </div>
               </div>
-            </div>
+              <div class="col-sm-4">
+                  <div class="card h-100">
+                      <img
+                          src="https://cdni.iconscout.com/illustration/free/thumb/free-sign-up-form-4575543-3798675.png"
+                          class="card-img-top w-50"
+                          alt="imagem pessoa trabalhando">
+                      <div class="card-body">
+                          <h5 class="card-title">Compatibilidade e Personalização</h5>
+                          <p class="card-text">Beneficie-se da compatibilidade com os principais navegadores e da facilidade de personalização, permitindo que o Bootstrap atenda às necessidades específicas do seu projeto</p>
+                      </div>
+                      <div class="card-footer">
+                          <small class="text-body-secondary">postado a 2 semanas</small>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="col-md-4">
-            
-              <div class="card m-1">
-                <img src="https://cdni.iconscout.com/illustration/free/thumb/free-sign-up-form-4575543-3798675.png"
-                  class="card-img-top w-50" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Componentes Prontos para Uso</h5>
-                  <p class="card-text">Aproveite uma biblioteca extensa de
-                    componentes pré-projetados do Bootstrap,
-                    economizando tempo e esforço no desenvolvimento
-                    de interfaces atrativas.
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">Postado á 2 dias</small>
-                </div>
-              </div>
-          
-          </div>
-          <div class="col-md-4">
-            <div class="card m-1">
-              <img src="https://cdni.iconscout.com/illustration/free/thumb/free-sign-up-form-4575543-3798675.png"
-                class="card-img-top w-50" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Compatibilidade e Personalização</h5>
-                <p class="card-text">Beneficie-se da compatibilidade com os principais
-                  navegadores e da facilidade de personalização, permitindo
-                  que o Bootstrap atenda às necessidades específicas
-                  do seu projeto.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Postado á 2 semanas</small>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-
+  </section>
+      
       <!--div accordion-->
       <div class="row d-flex justify-content-center mx-0 my-5">
         <div class="col-lg-8 accordion accordion-flush" id="accordionFlushExample">
@@ -194,8 +193,7 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
           </form>
         </div>
       </div>
-
-
+  
   </main>
 
   
